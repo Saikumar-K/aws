@@ -14,21 +14,21 @@ task1.1 AWS Account created , sign up at AWS Console https://aws.amazon.com/cons
 task1.2️ To Enable MFA for the Root User
 	Logged in as Root User (your email ID used during account creation).
 	Go to:
-	IAM Service → Users → Security Credentials → Multi-Factor Authentication (MFA)
+	==IAM Service → Users → Security Credentials → Multi-Factor Authentication (MFA)==
 	Choose Virtual MFA device → scan QR code using Google Authenticator / Authy app.
 	Enter the 2 OTPs shown →  Done.
 	Now your root account is much safer!
 
 task1.3.1 Set Account Alias
 	This makes login easy (instead of using your 12-digit AWS account ID).
-	Go to  IAM → Account Alias
+	Go to  ==IAM → Account Alias==
 	Example: Sai-demo
 	Then your login URL becomes:
 	https://Sai-demo.signin.aws.amazon.com/console
 
 task1.3.2 Configure Custom Password Policy
 	Set rules so IAM users follow strong password standards.
-	Go to  IAM → Account Settings → Password Policy
+	Go to  ==IAM → Account Settings → Password Policy==
 	Apply:
 	Minimum length = 8 characters
 	Must include:
