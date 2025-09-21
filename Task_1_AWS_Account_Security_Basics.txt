@@ -18,14 +18,19 @@ task1.2️ To Enable MFA for the Root User
 	Choose Virtual MFA device → scan QR code using Google Authenticator / Authy app.
 	Enter the 2 OTPs shown →  Done.
 	Now your root account is much safer!
-
+----------------------------------------------------------------------------------------------------
 task1.3.1 Set Account Alias
 	This makes login easy (instead of using your 12-digit AWS account ID).
 	Go to  IAM → Account Alias
 	Example: Sai-demo
 	Then your login URL becomes:
 	https://Sai-demo.signin.aws.amazon.com/console
+	
+	CLI:
+		aws iam create-account-alias --account-alias Sai-demo
+		aws iam list-account-aliases
 
+----------------------------------------------------------------------------------------------------
 task1.3.2 Configure Custom Password Policy
 	Set rules so IAM users follow strong password standards.
 	Go to  IAM → Account Settings → Password Policy
@@ -36,3 +41,15 @@ task1.3.2 Configure Custom Password Policy
 	 At least one number
 	 At least one special character
 	 Prevent password reuse (last 3 passwords).
+	 
+	 CLI:
+		aws iam update-account-password-policy \
+		  --minimum-password-length 8 \
+		  --require-uppercase-characters \
+		  --require-numbers \
+		  --require-symbols \
+		  --password-reuse-prevention 3
+		
+		aws iam get-account-password-policy
+
+==========================================================================================================================
