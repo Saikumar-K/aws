@@ -27,7 +27,7 @@ Task 4 → Test Administrator Privileges
 <img width="955" height="474" alt="image" src="https://github.com/user-attachments/assets/398559db-f14a-45c0-871f-cd3d3aaf76dd" />
 <img width="871" height="325" alt="image" src="https://github.com/user-attachments/assets/f47580a7-f2d3-4a4d-95b9-51254d7d4fc8" />
 
-==Verified that Denied access to Account or Billing Information.
+## Verified that Denied access to Account or Billing Information.
 
 
 
