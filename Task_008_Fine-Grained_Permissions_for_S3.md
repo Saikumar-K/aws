@@ -12,11 +12,37 @@ Task 8 → Fine-Grained Permissions for S3
 ---
 
 ask8.1 Created an IAM user named S3RestrictedUser.
-	task8.2 Attached customer-managed policy ="S3RestrictedUserAccess", 
+	task8.2 Attached customer-managed policy ="S3RestrictedUserAccess-CustomPolicy",
+<img width="942" height="446" alt="image" src="https://github.com/user-attachments/assets/41214020-2937-42dc-a81c-3079c8501e2d" />
 
 <img width="948" height="325" alt="image" src="https://github.com/user-attachments/assets/a76f6caa-0c79-4ec6-8913-229ead722bce" />
 <img width="952" height="413" alt="image" src="https://github.com/user-attachments/assets/e163db21-5306-4a6b-be53-e5f4d1fc3d2c" />
 <img width="945" height="421" alt="image" src="https://github.com/user-attachments/assets/af21dbce-43dc-4198-b3d5-84d2e471b425" />
+
+---
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::my-restricted-bucket*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": "*"
+        }
+    ]
+}
 
 ---
 
