@@ -18,6 +18,10 @@ Task 7 → Budget Viewer User
 
 Verifying that=>Access to billing information (e.g., budgets, cost explorer) is allowed.
 <img width="971" height="347" alt="image" src="https://github.com/user-attachments/assets/b26c35d4-9b09-4afb-963e-56cd559857d1" />
+Cost explorer opened, but getting an error saying as below
+<img width="946" height="443" alt="image" src="https://github.com/user-attachments/assets/8b9ef942-8339-41dc-addf-d1820474e54a" />
+<img width="956" height="338" alt="image" src="https://github.com/user-attachments/assets/dd5dc48d-811c-4b5b-8bf5-e0ad9de3cfc4" />
+
 
 ---
 
