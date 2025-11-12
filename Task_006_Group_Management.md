@@ -8,8 +8,7 @@ Task 6 → Group Management
 			Attempting to upload a file results in an error due to insufficient permissions.
 ------------------------------------------------------------------------------------------------------------------------
 
-## task6.1 Created an IAM group named Developers by
-	Attaching the AmazonS3ReadOnlyAccess policy to the group.
+task6.1 Created an IAM group named Developers by attaching the AmazonS3ReadOnlyAccess policy to the group.
 	<img width="914" height="221" alt="image" src="https://github.com/user-attachments/assets/72d79efa-4d5e-416d-8066-c58340631b59" />
 
 Added two IAM users (DevUser1 and DevUser2) to the Developers group.
