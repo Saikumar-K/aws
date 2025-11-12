@@ -14,6 +14,8 @@ Task 5 → Enable Billing Access for an IAM User
 <img width="956" height="233" alt="image" src="https://github.com/user-attachments/assets/cbe08423-30f7-49e3-8d5a-d17f63f7c84f" />
 <img width="976" height="153" alt="image" src="https://github.com/user-attachments/assets/9c3590c9-013e-4096-9f05-697112823aea" />
 
+---
+
 ## Note: Billing access requires additional configuration at the account level. this can be done using root user login.
 	Now checking back with AdminUser now and verified that information is accessed and shown properly to user as well:
 <img width="948" height="416" alt="image" src="https://github.com/user-attachments/assets/1861c799-9555-4b16-b630-4d029cf8deaa" />
