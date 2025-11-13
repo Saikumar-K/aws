@@ -11,6 +11,89 @@ Task 12 → Allow Users to enable MFA himself
 		Switch to MFA-Task user, verify if the MFA-Task user can enable/disable/sync MFA after the policy is attached.
 ------------------------------------------------------------------------------------------------------------------------
 
+Here’s how you can perform it, step by step 👇
+
+---
+
+### 🎯 **Task 12: Allow Users to Enable MFA Themselves**
+
+**Objective:**
+Allow an IAM user to enable, disable, or resync MFA devices in your AWS account.
+
+---
+
+### 🧩 **Step-by-Step Process**
+
+#### **1️⃣ Create the IAM user**
+
+* Go to **IAM → Users → Add Users**
+* Name the user: `MFA-Task`
+* Give **AWS Management Console Access**
+* Attach **AmazonS3FullAccess** policy (as per task requirement).
+* Complete creation.
+
+Now log in as the `MFA-Task` user and try to enable MFA from:
+**My Security Credentials → Assign MFA device.**
+You’ll notice it **fails**, because the user doesn’t have IAM permissions yet — that’s expected.
+
+---
+
+#### **2️⃣ Create the MFA Management Policy**
+
+Log in as **root** or an **IAM admin** user and create a new policy:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:EnableMFADevice",
+        "iam:DeactivateMFADevice",
+        "iam:ResyncMFADevice",
+        "iam:ListMFADevices",
+        "iam:ListVirtualMFADevices",
+        "iam:CreateVirtualMFADevice",
+        "iam:DeleteVirtualMFADevice"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+Save it with the name: **`MFA-ManagePolicy`**
+
+---
+
+#### **3️⃣ Attach the Policy**
+
+Attach the newly created **MFA-ManagePolicy** to the `MFA-Task` user in addition to the existing **S3FullAccess** policy.
+
+---
+
+#### **4️⃣ Verify**
+
+* Log back in as the **MFA-Task** user.
+* Navigate to **My Security Credentials → Assign MFA Device.**
+* Now you’ll be able to **enable, disable, or resync MFA** successfully.
+
+---
+
+### ✅ **Expected Outcome**
+
+Before attaching the new policy → MFA setup fails (access denied).
+After attaching the policy → `MFA-Task` user can manage their own MFA device.
+
+---
+
+That’s it — this demonstrates how to delegate **self-service MFA management** securely without giving full IAM access.
+
+---
+---
+---
+
 ---
 
 Created an IAM user with Name "MFA-Task" attach Just S3FullAccess policy,
