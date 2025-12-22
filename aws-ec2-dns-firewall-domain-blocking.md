@@ -81,8 +81,7 @@ wget https://google.com
 * ✅ All websites are accessible
 * No connection failures
 
-📸 **Screenshot Placeholder**
-
+<img width="1123" height="765" alt="Screenshot 2025-12-22 221909" src="https://github.com/user-attachments/assets/992c1b85-7906-4305-a515-4ba8347418ab" />
 > Insert screenshot showing successful `wget` output for all websites
 
 ---
@@ -116,8 +115,8 @@ You can perform this step from either:
    ```
 7. Save the domain list
 
-📸 **Screenshot Placeholder**
-
+<img width="940" height="295" alt="image" src="https://github.com/user-attachments/assets/6232c958-034d-4b71-a5a6-b4c28a649b78" />
+<img width="993" height="576" alt="Screenshot 2025-12-22 222101" src="https://github.com/user-attachments/assets/ef1c665e-0ae5-487a-82a4-04edd5ad599c" />
 > Insert screenshot of domain list creation with domains added
 
 ---
@@ -141,8 +140,9 @@ You can perform this step from either:
    * **Priority**: `1`
 5. Create the rule group
 
-📸 **Screenshot Placeholder**
-
+<img width="940" height="447" alt="image" src="https://github.com/user-attachments/assets/643fa7db-b4be-45bb-9def-70819edf26d2" />
+<img width="940" height="218" alt="image" src="https://github.com/user-attachments/assets/396182a9-7cbf-4ecb-9b8d-4724a69cccb7" />
+<img width="1484" height="635" alt="Screenshot 2025-12-22 222157" src="https://github.com/user-attachments/assets/c4b60388-36ff-403d-a46d-4412eb7e85ac" />
 > Insert screenshot showing rule configuration and action set to BLOCK
 
 ---
@@ -160,8 +160,9 @@ You can perform this step from either:
    * Target VPC where EC2 instance is running
 4. Confirm association
 
-📸 **Screenshot Placeholder**
-
+<img width="780" height="393" alt="image" src="https://github.com/user-attachments/assets/9e0e5f43-8ec4-4905-8b23-ec67ef2043b9" />
+<img width="1528" height="143" alt="Screenshot 2025-12-22 222238" src="https://github.com/user-attachments/assets/7e7d81ee-9d1a-4dda-9fb8-168ca86775a8" />
+<img width="1481" height="589" alt="Screenshot 2025-12-22 222322" src="https://github.com/user-attachments/assets/f2a86875-ece1-4b14-be0f-94727c40d60b" />
 > Insert screenshot of VPC association screen
 
 ---
@@ -189,8 +190,8 @@ wget https://google.com
 * Blocked domains will show **DNS resolution failure**
 * Allowed domains will work normally
 
-📸 **Screenshot Placeholder**
-
+<img width="1186" height="492" alt="Screenshot 2025-12-22 222543" src="https://github.com/user-attachments/assets/8ecda2d4-0f11-4e95-9695-bffd6bd32e8f" />
+<img width="940" height="158" alt="image" src="https://github.com/user-attachments/assets/15ab59ff-712e-489d-ae10-d4a369ddf694" />
 > Insert screenshot showing `wget` failure for blocked domains and success for allowed domain
 
 ---
