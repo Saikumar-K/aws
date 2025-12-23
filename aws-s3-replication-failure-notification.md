@@ -125,6 +125,7 @@ Once replication failed:
 
 <img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/6bc650da-ab87-4d3b-b459-1a8b1011cd68" />
 <img width="847" height="268" alt="image" src="https://github.com/user-attachments/assets/71ce4cf0-d400-4604-861f-838ae37adf5b" />
+<img width="843" height="310" alt="image" src="https://github.com/user-attachments/assets/2d0e8984-44d3-4045-8172-dbe099d5da2d" />
  *Screenshot attached — SQS message and email notification*
 
 ---
